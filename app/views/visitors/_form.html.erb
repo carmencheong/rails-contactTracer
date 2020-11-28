@@ -1,0 +1,45 @@
+<%= form_for @visitor do |v| %>
+
+  <% if @visitor.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@visitor.errors.count, "error") %> prohibited
+        this visitor from being saved:
+      </h2>
+      <ul>
+        <% @visitor.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p>
+    <%= v.label :"Full Legal Name" %><br>
+    <%= v.text_field :fullname %>
+  </p>
+ 
+  <p>
+    <%= v.label :NRIC %><br>
+    <%= v.text_field :nric %>
+  </p>
+ 
+   <p>
+    <%= v.label :"Body Temperature" %><br>
+    <%= v.text_field :temperature %>
+  </p>
+
+  <p>
+    <%= v.label :"Date" %><br>
+    <%= v.text_field :date %>
+  </p>
+
+  <p>
+    <%= v.label :"Time" %><br>
+    <%= v.text_field :time %>
+  </p>  
+  <p>
+    <%= v.submit %>
+  </p>
+  
+<% end %>

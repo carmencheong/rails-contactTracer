@@ -1,0 +1,48 @@
+<header>
+  <h1>Tapir Store</h1>
+</header>
+
+<div class="container">
+  <div class="col">
+    <p>Thank you for checking in!</p>
+  </div>
+
+  <div class="row-1">
+	<table> 
+	  <tr>
+		<td><strong>Full Legal Name</strong></td>
+		<td><%= @visitor.fullname %></td></tr>
+	  <tr>
+		<td><strong>NRIC</strong></td>
+		<td><%= @visitor.nric %></td></tr>	
+	  <tr>
+		<td><strong>Body Temperature</strong></td>
+		<td><%= @visitor.temperature %></td></tr>
+	  <tr>
+		<td><strong>Date</strong></td>
+		<td><%= @visitor.date %></td></tr>
+	  <tr>
+		<td><strong>Time</strong></td>
+		<td><%= @visitor.time %></td></tr>
+	</table>
+  </div>
+
+  <div class="row-2">
+	<p>Please be reminded to always</p>
+
+	<div class = "icon">
+	  <table>
+		<tr>
+		  <td><%= image_tag('wear-mask.png')%></td>
+		  <td><%= image_tag('social-distancing.png')%></td></tr>
+		<tr>
+		  <td>WEAR A MASK</td>
+		  <td>PRACTISE SOCIAL DISTANCING</td></tr>	
+	  </table>
+	</div>
+  </div>
+
+  <div class="row-3">
+	<p>Happy Shopping!</p>
+  </div>
+ </div>
