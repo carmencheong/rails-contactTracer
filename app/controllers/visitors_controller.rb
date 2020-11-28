@@ -11,6 +11,8 @@ class VisitorsController < ApplicationController
     @visitor = Visitor.new(visitor_params)
   
     if @visitor.save
+	  #@visitor = Visitor.create(:date => Date.today)
+	  #@visitor = Visitor.create(:time => Time.now)
 	  redirect_to @visitor
 	else
 	  render 'new'
