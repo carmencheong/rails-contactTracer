@@ -3,8 +3,7 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-HOWEVER, I have yet to write a full documentation, the following is the things to be covered soon.
-Things covered:
+HOWEVER, I have yet to write a full documentation, the following are the things to be covered soon :
 
 * Ruby version : ruby 2.7.2p137
 
