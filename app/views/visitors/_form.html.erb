@@ -15,29 +15,20 @@
   <% end %>
   
   <p>
-    <%= v.label :"Full Legal Name" %><br>
+    <%= v.label :name, "Full Legal Name *" %><br>
     <%= v.text_field :fullname %>
   </p>
  
   <p>
-    <%= v.label :NRIC %><br>
+    <%= v.label :nric, "NRIC *" %><br>
     <%= v.text_field :nric %>
   </p>
  
    <p>
-    <%= v.label :"Body Temperature" %><br>
+    <%= v.label :bodytemp, "Body Temperature \u{2103} *" %><br>
     <%= v.text_field :temperature %>
   </p>
 
-  <p>
-    <%= v.label :"Date" %><br>
-    <%= v.text_field :date %>
-  </p>
-
-  <p>
-    <%= v.label :"Time" %><br>
-    <%= v.text_field :time %>
-  </p>  
   <p>
     <%= v.submit %>
   </p>

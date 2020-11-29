@@ -4915,3 +4915,1259 @@ Processing by VisitorsController#new as HTML
 Completed 200 OK in 108ms (Views: 53.9ms | ActiveRecord: 0.0ms | Allocations: 12793)
 
 
+Started GET "/" for ::1 at 2020-11-28 21:18:44 +0800
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 281)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 336ms (Views: 307.5ms | ActiveRecord: 0.0ms | Allocations: 9835)
+
+
+Started GET "/visitors" for ::1 at 2020-11-28 21:20:03 +0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 0.0ms | Allocations: 5075)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-28 21:20:05 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 90.8ms | Allocations: 3406)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 94.5ms | Allocations: 3702)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 204ms (Views: 151.8ms | ActiveRecord: 1.5ms | Allocations: 13633)
+
+
+Started POST "/visitors" for ::1 at 2020-11-28 21:21:31 +0800
+Processing by VisitorsController#create as HTML
+  Parameters: {"authenticity_token"=>"33LIkLT2TZEuTzhBWkBREanSUe3uCZQiA3CQzlUXPfY2aPiwNc9eNsD+1CBE+Nvbo+E73XMorJWE2INiGOcMsQ==", "visitor"=>{"fullname"=>"John Woo", "nric"=>"010428141123", "temperature"=>"36.4", "date"=>"28 Nov 2020", "time"=>"11.00 pm"}, "commit"=>"Create Visitor"}
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 2.5ms | Allocations: 1471)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1533)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 0.0ms | Allocations: 7154)
+
+
+Started POST "/visitors" for ::1 at 2020-11-28 21:22:11 +0800
+Processing by VisitorsController#create as HTML
+  Parameters: {"authenticity_token"=>"RYUEM/Zb+SIyIAo0Hwj1qIgSPOVUOIkJDspa8ukjTs0PNE6u+7GHc0pQnW42rKUiiPgHlats9hDVsM79RD9GTg==", "visitor"=>{"fullname"=>"John Woo", "nric"=>"990428141123", "temperature"=>"36.4", "date"=>"28 Nov 2020", "time"=>"11.00 pm"}, "commit"=>"Create Visitor"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+  [1m[36mVisitor Create (5.0ms)[0m  [1m[32mINSERT INTO "visitors" ("fullname", "nric", "temperature", "date", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["fullname", "John Woo"], ["nric", 990428141123], ["temperature", "36.4"], ["date", "28 Nov 2020"], ["time", "11.00 pm"], ["created_at", "2020-11-28 13:22:11.505570"], ["updated_at", "2020-11-28 13:22:11.505570"]]
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+Redirected to http://localhost:3000/visitors/7
+Completed 302 Found in 28ms (ActiveRecord: 18.9ms | Allocations: 2909)
+
+
+Started GET "/visitors/7" for ::1 at 2020-11-28 21:22:11 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mVisitor Load (0.4ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 39.1ms | Allocations: 1605)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 141ms (Views: 76.5ms | ActiveRecord: 0.4ms | Allocations: 9354)
+
+
+Started GET "/" for 127.0.0.1 at 2020-11-29 10:43:46 +0800
+  [1m[35m (8.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 281)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 134ms (Views: 107.0ms | ActiveRecord: 0.0ms | Allocations: 9834)
+
+
+Started GET "/visitors" for 127.0.0.1 at 2020-11-29 10:43:49 +0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.0ms | Allocations: 5130)
+
+
+Started GET "/visitors/new" for 127.0.0.1 at 2020-11-29 10:43:50 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 57.8ms | Allocations: 3409)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 60.0ms | Allocations: 3705)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 120ms (Views: 105.7ms | ActiveRecord: 1.2ms | Allocations: 13629)
+
+
+Started POST "/visitors" for ::1 at 2020-11-29 10:44:31 +0800
+Processing by VisitorsController#create as HTML
+  Parameters: {"authenticity_token"=>"qdr/XYcPtPZ47FSRKwcVxo2QmHBBfC4KX7aPqG+BI8f3frBtkId/F7E6fgTJaUM3P8Kt5eKaebIWqutvQcdIlg==", "visitor"=>{"fullname"=>"May Lee", "nric"=>"981203145578", "temperature"=>"36.7", "date"=>"", "time"=>""}, "commit"=>"Create Visitor"}
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 2.2ms | Allocations: 1597)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1658)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.0ms | Allocations: 7593)
+
+
+Started GET "/visitors" for ::1 at 2020-11-29 10:45:27 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms | Allocations: 4581)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 10:45:29 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 3.6ms | Allocations: 1340)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1400)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 42.6ms | ActiveRecord: 1.0ms | Allocations: 10813)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 10:48:16 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 3.0ms | Allocations: 1562)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1856)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.0ms | Allocations: 7232)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 10:48:46 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 3.8ms | Allocations: 1707)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1994)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 0.0ms | Allocations: 7345)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 10:49:25 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 3.3ms | Allocations: 1705)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1992)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.0ms | Allocations: 7341)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 10:50:37 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 2.4ms | Allocations: 1361)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1648)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.0ms | Allocations: 7013)
+
+
+Started POST "/visitors" for ::1 at 2020-11-29 10:50:46 +0800
+Processing by VisitorsController#create as HTML
+  Parameters: {"authenticity_token"=>"IthoVtZtZ0ZGHHeZVjFxGRXkSVQMg2OozdsA7j75QjWstttpTu+vyQxXvo817CJLmMUgmojSJMvo3Y7Cyo/ssg==", "visitor"=>{"fullname"=>"May Lee", "nric"=>"981203145578", "temperature"=>"36.7"}, "commit"=>"Create Visitor"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+  [1m[36mVisitor Create (1.5ms)[0m  [1m[32mINSERT INTO "visitors" ("fullname", "nric", "temperature", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["fullname", "May Lee"], ["nric", 981203145578], ["temperature", "36.7"], ["created_at", "2020-11-29 02:50:47.042291"], ["updated_at", "2020-11-29 02:50:47.042291"]]
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+Redirected to http://localhost:3000/visitors/8
+Completed 302 Found in 26ms (ActiveRecord: 12.3ms | Allocations: 2964)
+
+
+Started GET "/visitors/8" for ::1 at 2020-11-29 10:50:47 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mVisitor Load (0.4ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1594)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 52.4ms | ActiveRecord: 0.4ms | Allocations: 9338)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mVisitor Load (0.4ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/visitors/new" for ::1 at 2020-11-29 10:56:24 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 1.6ms | Allocations: 914)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 974)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 5428)
+
+
+Started POST "/visitors" for ::1 at 2020-11-29 10:56:42 +0800
+Processing by VisitorsController#create as HTML
+  Parameters: {"authenticity_token"=>"JvjKMllCEPvweRLfOSf9VNMjr5DxxG4V4UDn/b0aBO6olnkNwcDYdLoy28la+q4GXgLGXnWVKXbERmnRSWyqaQ==", "visitor"=>{"fullname"=>"May Lee", "nric"=>"981203145578", "temperature"=>"36.8"}, "commit"=>"Create Visitor"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+  [1m[36mVisitor Create (1.4ms)[0m  [1m[32mINSERT INTO "visitors" ("fullname", "nric", "temperature", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["fullname", "May Lee"], ["nric", 981203145578], ["temperature", "36.8"], ["created_at", "2020-11-29 02:56:42.387696"], ["updated_at", "2020-11-29 02:56:42.387696"]]
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+Redirected to http://localhost:3000/visitors/9
+Completed 302 Found in 21ms (ActiveRecord: 13.7ms | Allocations: 2711)
+
+
+Started GET "/visitors/9" for ::1 at 2020-11-29 10:56:42 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mVisitor Load (0.2ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1340)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.2ms | Allocations: 6232)
+
+
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/visitors/9" for ::1 at 2020-11-29 10:57:22 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mVisitor Load (0.2ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 71.9ms | Allocations: 6310)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.2ms | Allocations: 7982)
+
+
+  
+ActionView::Template::Error (undefined method `timestamps' for #<Visitor:0x000000000a245900>
+Did you mean?  time_was):
+    20: 		<td><%= @visitor.temperature %></td></tr>
+    21: 	  <tr>
+    22: 		<td><strong>Date</strong></td>
+    23: 		<td><%= @visitor.timestamps %></td></tr>
+    24: 	  <tr>
+    25: 		<td><strong>Time</strong></td>
+    26: 		<td><%= @visitor.time %></td></tr>
+  
+app/views/visitors/show.html.erb:23
+Started GET "/visitors/9" for ::1 at 2020-11-29 10:57:36 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1580)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 50.5ms | ActiveRecord: 0.3ms | Allocations: 7417)
+
+
+Started GET "/visitors/9" for ::1 at 2020-11-29 11:00:54 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mVisitor Load (0.4ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1340)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 43.0ms | ActiveRecord: 0.4ms | Allocations: 6220)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:01:00 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 2.4ms | Allocations: 1382)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1670)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.0ms | Allocations: 6255)
+
+
+Started POST "/visitors" for ::1 at 2020-11-29 11:01:16 +0800
+Processing by VisitorsController#create as HTML
+  Parameters: {"authenticity_token"=>"YalXLlno2C5VvA2MxPAutXCD2dlNZtNg2iYvTipOkOzvx+QRwWoQoR/3xJqnLX3n/aKwF8k3lAP/IKFi3jg+aw==", "visitor"=>{"fullname"=>"John Woo", "nric"=>"910428141123", "temperature"=>"36.7"}, "commit"=>"Create Visitor"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+  [1m[36mVisitor Create (1.4ms)[0m  [1m[32mINSERT INTO "visitors" ("fullname", "nric", "temperature", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["fullname", "John Woo"], ["nric", 910428141123], ["temperature", "36.7"], ["created_at", "2020-11-29 03:01:16.547598"], ["updated_at", "2020-11-29 03:01:16.547598"]]
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+Redirected to http://localhost:3000/visitors/10
+Completed 302 Found in 19ms (ActiveRecord: 11.1ms | Allocations: 2689)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:01:16 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1346)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.3ms | Allocations: 6230)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:07:11 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.4ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1581)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 0.4ms | Allocations: 7383)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:07:35 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.2ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1112)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 2791)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    20: 		<td><%= @visitor.temperature %></td></tr>
+    21: 	  <tr>
+    22: 		<td><strong>Date</strong></td>
+    23: 		<td><%= @visitor.created_at.strftime %></td></tr>
+    24: 	  <tr>
+    25: 		<td><strong>Time</strong></td>
+    26: 		<td><%= @visitor.time %></td></tr>
+  
+app/views/visitors/show.html.erb:23
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:08:17 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 9.8ms | Allocations: 2707)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms | Allocations: 4385)
+
+
+  
+ActionView::Template::Error (undefined method `toDateString' for Sun, 29 Nov 2020 03:01:16 UTC +00:00:Time
+Did you mean?  to_datetime):
+    20: 		<td><%= @visitor.temperature %></td></tr>
+    21: 	  <tr>
+    22: 		<td><strong>Date</strong></td>
+    23: 		<td><%= @visitor.created_at.toDateString %></td></tr>
+    24: 	  <tr>
+    25: 		<td><strong>Time</strong></td>
+    26: 		<td><%= @visitor.time %></td></tr>
+  
+app/views/visitors/show.html.erb:23
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:08:26 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2701)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms | Allocations: 4379)
+
+
+  
+ActionView::Template::Error (undefined method `toDateString' for Sun, 29 Nov 2020 03:01:16 UTC +00:00:Time
+Did you mean?  to_datetime):
+    20: 		<td><%= @visitor.temperature %></td></tr>
+    21: 	  <tr>
+    22: 		<td><strong>Date</strong></td>
+    23: 		<td><%= @visitor.created_at.toDateString() %></td></tr>
+    24: 	  <tr>
+    25: 		<td><strong>Time</strong></td>
+    26: 		<td><%= @visitor.time %></td></tr>
+  
+app/views/visitors/show.html.erb:23
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:08:56 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1592)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 51.5ms | ActiveRecord: 0.3ms | Allocations: 7397)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:09:36 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.4ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1583)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 47.9ms | ActiveRecord: 0.4ms | Allocations: 7360)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:11:12 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1593)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 53.0ms | ActiveRecord: 0.3ms | Allocations: 7382)
+
+
+Started GET "/" for ::1 at 2020-11-29 11:11:24 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 143)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.0ms | Allocations: 5104)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:13:59 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1589)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 53.4ms | ActiveRecord: 0.3ms | Allocations: 7368)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:14:13 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.4ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1598)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 47.9ms | ActiveRecord: 0.4ms | Allocations: 7391)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:14:32 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.2ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1586)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 0.2ms | Allocations: 7371)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:14:39 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.5ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1585)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 49.3ms | ActiveRecord: 0.5ms | Allocations: 7364)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:15:52 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1603)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 49.1ms | ActiveRecord: 1.7ms | Allocations: 12552)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:16:03 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1370)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 54.5ms | ActiveRecord: 0.3ms | Allocations: 6246)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:16:12 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1370)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 57.0ms | ActiveRecord: 0.3ms | Allocations: 6263)
+
+
+Started GET "/visitors" for ::1 at 2020-11-29 11:16:33 +0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.0ms | Allocations: 4685)
+
+
+Started GET "/" for ::1 at 2020-11-29 11:16:34 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.0ms | Allocations: 5093)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:16:38 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 2.3ms | Allocations: 1322)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1612)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.0ms | Allocations: 6197)
+
+
+Started POST "/visitors" for ::1 at 2020-11-29 11:17:12 +0800
+Processing by VisitorsController#create as HTML
+  Parameters: {"authenticity_token"=>"iG/uBRiaa77APvIVv+UL/Sdk3ZIfZHeVvjZevUW+8JXWy6E1DxKgXwno2IBdi10MlTboB7yCIC33Kjp6a/ibxA==", "visitor"=>{"fullname"=>"Tan Lee Hoon", "nric"=>"991113145778", "temperature"=>"36.7"}, "commit"=>"Create Visitor"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+  [1m[36mVisitor Create (1.6ms)[0m  [1m[32mINSERT INTO "visitors" ("fullname", "nric", "temperature", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["fullname", "Tan Lee Hoon"], ["nric", 991113145778], ["temperature", "36.7"], ["created_at", "2020-11-29 03:17:12.673257"], ["updated_at", "2020-11-29 03:17:12.673257"]]
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/visitors_controller.rb:13:in `create'
+Redirected to http://localhost:3000/visitors/11
+Completed 302 Found in 23ms (ActiveRecord: 14.1ms | Allocations: 2851)
+
+
+Started GET "/visitors/11" for ::1 at 2020-11-29 11:17:12 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1376)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.3ms | Allocations: 6250)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:22:30 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 1.1ms | Allocations: 1389)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1679)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2837)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for @visitor do |v| %>
+
+  <% if @visitor.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@visitor.errors.count, "error") %> prohibited
+        this visitor from being saved:
+      </h2>
+      <ul>
+        <% @visitor.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p>
+    <%= v.label :"Full Legal Name *" %><br>
+    <%= v.text_field :fullname %>
+  </p>
+ 
+  <p>
+    <%= v.label :NRIC * %><br>
+    <%= v.text_field :nric %>
+  </p>
+ 
+   <p>
+    <%= v.label :"Body Temperature *" %><br>
+    <%= v.text_field :temperature %>
+  </p>
+
+  <p>
+    <%= v.submit %>
+  </p>
+  
+<% end %>
+):
+1:    <%= form_for @visitor do |v| %>
+2:    
+3:      <% if @visitor.errors.any? %>
+4:        <div id="error_explanation">
+5:          <h2>
+6:            <%= pluralize(@visitor.errors.count, "error") %> prohibited
+7:            this visitor from being saved:
+8:          </h2>
+9:          <ul>
+10:            <% @visitor.errors.full_messages.each do |msg| %>
+11:              <li><%= msg %></li>
+12:            <% end %>
+13:          </ul>
+14:        </div>
+15:      <% end %>
+16:      
+17:      <p>
+18:        <%= v.label :"Full Legal Name *" %><br>
+19:        <%= v.text_field :fullname %>
+20:      </p>
+21:     
+22:      <p>
+23:        <%= v.label :NRIC * %><br>
+24:        <%= v.text_field :nric %>
+25:      </p>
+26:     
+27:       <p>
+28:        <%= v.label :"Body Temperature *" %><br>
+29:        <%= v.text_field :temperature %>
+30:      </p>
+31:    
+32:      <p>
+33:        <%= v.submit %>
+34:      </p>
+35:      
+36:    <% end %>
+  
+app/views/visitors/_form.html.erb:23: syntax error, unexpected ')'
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:23: syntax error, unexpected ')'
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:23: syntax error, unexpected ')'
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:23: syntax error, unexpected ')'
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:23: syntax error, unexpected ')'
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:23: syntax error, unexpected ')'
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/new.html.erb:5
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:22:44 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 3.0ms | Allocations: 1387)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1675)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 52.8ms | ActiveRecord: 0.0ms | Allocations: 7036)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:24:25 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 1.0ms | Allocations: 1387)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1676)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2824)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for @visitor do |v| %>
+
+  <% if @visitor.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@visitor.errors.count, "error") %> prohibited
+        this visitor from being saved:
+      </h2>
+      <ul>
+        <% @visitor.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p>
+    <%= v.label : name, 'Full Legal Name *' %><br>
+    <%= v.text_field :fullname %>
+  </p>
+ 
+  <p>
+    <%= v.label :"NRIC *" %><br>
+    <%= v.text_field :nric %>
+  </p>
+ 
+   <p>
+    <%= v.label :"Body Temperature *" %><br>
+    <%= v.text_field :temperature %>
+  </p>
+
+  <p>
+    <%= v.submit %>
+  </p>
+  
+<% end %>
+):
+1:    <%= form_for @visitor do |v| %>
+2:    
+3:      <% if @visitor.errors.any? %>
+4:        <div id="error_explanation">
+5:          <h2>
+6:            <%= pluralize(@visitor.errors.count, "error") %> prohibited
+7:            this visitor from being saved:
+8:          </h2>
+9:          <ul>
+10:            <% @visitor.errors.full_messages.each do |msg| %>
+11:              <li><%= msg %></li>
+12:            <% end %>
+13:          </ul>
+14:        </div>
+15:      <% end %>
+16:      
+17:      <p>
+18:        <%= v.label : name, 'Full Legal Name *' %><br>
+19:        <%= v.text_field :fullname %>
+20:      </p>
+21:     
+22:      <p>
+23:        <%= v.label :"NRIC *" %><br>
+24:        <%= v.text_field :nric %>
+25:      </p>
+26:     
+27:       <p>
+28:        <%= v.label :"Body Temperature *" %><br>
+29:        <%= v.text_field :temperature %>
+30:      </p>
+31:    
+32:      <p>
+33:        <%= v.submit %>
+34:      </p>
+35:      
+36:    <% end %>
+  
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/visitors/_form.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/visitors/_form.html.erb:38: syntax error, unexpected `end', expecting ')'
+app/views/visitors/new.html.erb:5
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:25:15 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 1.2ms | Allocations: 1387)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1677)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2830)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for @visitor do |v| %>
+
+  <% if @visitor.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@visitor.errors.count, "error") %> prohibited
+        this visitor from being saved:
+      </h2>
+      <ul>
+        <% @visitor.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p>
+    <%= v.label : "Full Legal Name *" %><br>
+    <%= v.text_field :fullname %>
+  </p>
+ 
+  <p>
+    <%= v.label :"NRIC *" %><br>
+    <%= v.text_field :nric %>
+  </p>
+ 
+   <p>
+    <%= v.label :"Body Temperature *" %><br>
+    <%= v.text_field :temperature %>
+  </p>
+
+  <p>
+    <%= v.submit %>
+  </p>
+  
+<% end %>
+):
+1:    <%= form_for @visitor do |v| %>
+2:    
+3:      <% if @visitor.errors.any? %>
+4:        <div id="error_explanation">
+5:          <h2>
+6:            <%= pluralize(@visitor.errors.count, "error") %> prohibited
+7:            this visitor from being saved:
+8:          </h2>
+9:          <ul>
+10:            <% @visitor.errors.full_messages.each do |msg| %>
+11:              <li><%= msg %></li>
+12:            <% end %>
+13:          </ul>
+14:        </div>
+15:      <% end %>
+16:      
+17:      <p>
+18:        <%= v.label : "Full Legal Name *" %><br>
+19:        <%= v.text_field :fullname %>
+20:      </p>
+21:     
+22:      <p>
+23:        <%= v.label :"NRIC *" %><br>
+24:        <%= v.text_field :nric %>
+25:      </p>
+26:     
+27:       <p>
+28:        <%= v.label :"Body Temperature *" %><br>
+29:        <%= v.text_field :temperature %>
+30:      </p>
+31:    
+32:      <p>
+33:        <%= v.submit %>
+34:      </p>
+35:      
+36:    <% end %>
+  
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/new.html.erb:5
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:25:26 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 1.6ms | Allocations: 1374)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1436)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1857)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for @visitor do |v| %>
+
+  <% if @visitor.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@visitor.errors.count, "error") %> prohibited
+        this visitor from being saved:
+      </h2>
+      <ul>
+        <% @visitor.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p>
+    <%= v.label : "Full Legal Name *" %><br>
+    <%= v.text_field :fullname %>
+  </p>
+ 
+  <p>
+    <%= v.label :"NRIC *" %><br>
+    <%= v.text_field :nric %>
+  </p>
+ 
+   <p>
+    <%= v.label :"Body Temperature *" %><br>
+    <%= v.text_field :temperature %>
+  </p>
+
+  <p>
+    <%= v.submit %>
+  </p>
+  
+<% end %>
+):
+1:    <%= form_for @visitor do |v| %>
+2:    
+3:      <% if @visitor.errors.any? %>
+4:        <div id="error_explanation">
+5:          <h2>
+6:            <%= pluralize(@visitor.errors.count, "error") %> prohibited
+7:            this visitor from being saved:
+8:          </h2>
+9:          <ul>
+10:            <% @visitor.errors.full_messages.each do |msg| %>
+11:              <li><%= msg %></li>
+12:            <% end %>
+13:          </ul>
+14:        </div>
+15:      <% end %>
+16:      
+17:      <p>
+18:        <%= v.label : "Full Legal Name *" %><br>
+19:        <%= v.text_field :fullname %>
+20:      </p>
+21:     
+22:      <p>
+23:        <%= v.label :"NRIC *" %><br>
+24:        <%= v.text_field :nric %>
+25:      </p>
+26:     
+27:       <p>
+28:        <%= v.label :"Body Temperature *" %><br>
+29:        <%= v.text_field :temperature %>
+30:      </p>
+31:    
+32:      <p>
+33:        <%= v.submit %>
+34:      </p>
+35:      
+36:    <% end %>
+  
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/new.html.erb:5
+Started GET "/visitors/" for ::1 at 2020-11-29 11:25:37 +0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 141)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.0ms | Allocations: 4840)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:25:38 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 1.0ms | Allocations: 1374)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1436)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1867)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for @visitor do |v| %>
+
+  <% if @visitor.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@visitor.errors.count, "error") %> prohibited
+        this visitor from being saved:
+      </h2>
+      <ul>
+        <% @visitor.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p>
+    <%= v.label : "Full Legal Name *" %><br>
+    <%= v.text_field :fullname %>
+  </p>
+ 
+  <p>
+    <%= v.label :"NRIC *" %><br>
+    <%= v.text_field :nric %>
+  </p>
+ 
+   <p>
+    <%= v.label :"Body Temperature *" %><br>
+    <%= v.text_field :temperature %>
+  </p>
+
+  <p>
+    <%= v.submit %>
+  </p>
+  
+<% end %>
+):
+1:    <%= form_for @visitor do |v| %>
+2:    
+3:      <% if @visitor.errors.any? %>
+4:        <div id="error_explanation">
+5:          <h2>
+6:            <%= pluralize(@visitor.errors.count, "error") %> prohibited
+7:            this visitor from being saved:
+8:          </h2>
+9:          <ul>
+10:            <% @visitor.errors.full_messages.each do |msg| %>
+11:              <li><%= msg %></li>
+12:            <% end %>
+13:          </ul>
+14:        </div>
+15:      <% end %>
+16:      
+17:      <p>
+18:        <%= v.label : "Full Legal Name *" %><br>
+19:        <%= v.text_field :fullname %>
+20:      </p>
+21:     
+22:      <p>
+23:        <%= v.label :"NRIC *" %><br>
+24:        <%= v.text_field :nric %>
+25:      </p>
+26:     
+27:       <p>
+28:        <%= v.label :"Body Temperature *" %><br>
+29:        <%= v.text_field :temperature %>
+30:      </p>
+31:    
+32:      <p>
+33:        <%= v.submit %>
+34:      </p>
+35:      
+36:    <% end %>
+  
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/_form.html.erb:18: syntax error, unexpected ':'
+app/views/visitors/new.html.erb:5
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:25:57 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 2.2ms | Allocations: 1290)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1578)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.0ms | Allocations: 6943)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:26:06 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 3.1ms | Allocations: 1157)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1444)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.0ms | Allocations: 6795)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:26:27 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 1.8ms | Allocations: 921)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1208)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 45.1ms | ActiveRecord: 0.0ms | Allocations: 6565)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:27:39 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 1.9ms | Allocations: 919)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1206)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 47.6ms | ActiveRecord: 0.0ms | Allocations: 6547)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:27:56 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 2.4ms | Allocations: 918)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1205)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.0ms | Allocations: 6555)
+
+
+Started POST "/visitors" for ::1 at 2020-11-29 11:28:13 +0800
+Processing by VisitorsController#create as HTML
+  Parameters: {"authenticity_token"=>"VsF5dMapBoqaIUD246cqxgNuwwX0bz8NTTAcO+TYtL7Yr8pLXivOBdBqieCAenmUjk+qy3A+eG5oNpIXEK4aOQ==", "visitor"=>{"fullname"=>"", "nric"=>"", "temperature"=>""}, "commit"=>"Create Visitor"}
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 1.8ms | Allocations: 1232)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 39.1ms | ActiveRecord: 0.0ms | Allocations: 8274)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:31:02 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1591)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 39.1ms | ActiveRecord: 0.3ms | Allocations: 6620)
+
+
+Started GET "/visitors/7" for ::1 at 2020-11-29 11:31:11 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mVisitor Load (0.4ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1379)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 0.4ms | Allocations: 6263)
+
+
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:31:16 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.2ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1370)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.2ms | Allocations: 6238)
+
+
+Started GET "/visitors/1" for ::1 at 2020-11-29 11:31:18 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVisitor Load (0.4ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1364)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.4ms | Allocations: 6247)
+
+
+Started GET "/" for ::1 at 2020-11-29 11:33:06 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.0ms | Allocations: 5066)
+
+
+Started GET "/new" for ::1 at 2020-11-29 11:33:12 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-11-29 11:33:20 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms | Allocations: 4486)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:33:23 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 5.8ms | Allocations: 574)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 634)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms | Allocations: 5103)
+
+
+Started GET "/visitors/new/10" for ::1 at 2020-11-29 11:33:43 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/visitors/new/10"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/visitors/10" for ::1 at 2020-11-29 11:33:47 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.3ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1376)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 0.3ms | Allocations: 6262)
+
+
+Started GET "/visitors/new" for ::1 at 2020-11-29 11:34:42 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 0.9ms | Allocations: 565)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 625)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms | Allocations: 5068)
+
+
+Started POST "/visitors" for ::1 at 2020-11-29 11:34:56 +0800
+Processing by VisitorsController#create as HTML
+  Parameters: {"authenticity_token"=>"tPjINfht4VZqh88Nnn2sf7z4xhn12kFdbQqe/5OP9KtxPvU4iDOfjwGg/ue2eOV66fPdXhiTGj/7mooRTAwg8A==", "visitor"=>{"fullname"=>"", "nric"=>"", "temperature"=>""}, "commit"=>"Create Visitor"}
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 1.9ms | Allocations: 1222)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1282)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 39.1ms | ActiveRecord: 0.0ms | Allocations: 8028)
+
+

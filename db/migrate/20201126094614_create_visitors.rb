@@ -4,8 +4,6 @@ class CreateVisitors < ActiveRecord::Migration[6.0]
       t.string :fullname
       t.bigint :nric
       t.string :temperature
-      t.text :date
-      t.text :time
 
       t.timestamps
     end

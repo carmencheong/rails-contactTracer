@@ -20,10 +20,10 @@
 		<td><%= @visitor.temperature %></td></tr>
 	  <tr>
 		<td><strong>Date</strong></td>
-		<td><%= @visitor.date %></td></tr>
+		<td><%= @visitor.created_at.getlocal.strftime("%d %b %y") %></td></tr>
 	  <tr>
 		<td><strong>Time</strong></td>
-		<td><%= @visitor.time %></td></tr>
+		<td><%= @visitor.created_at.getlocal.strftime("%l:%M%P") %></td></tr>
 	</table>
   </div>
 
