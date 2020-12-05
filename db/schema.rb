@@ -10,14 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_26_094614) do
+ActiveRecord::Schema.define(version: 2020_11_30_073949) do
 
   create_table "visitors", force: :cascade do |t|
     t.string "fullname"
-    t.bigint "nric"
+    t.integer "nric"
     t.string "temperature"
-    t.text "date"
-    t.text "time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
