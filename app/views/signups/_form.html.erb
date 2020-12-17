@@ -1,13 +1,13 @@
-<%= form_for @visitor do |f| %>
+<%= form_for @signup do |f| %>
 
-  <% if @visitor.errors.any? %>
+  <% if @merchant.errors.any? %>
     <div id="error_explanation">
       <h2>
-        <%= pluralize(@visitor.errors.count, "error") %> prohibited
-        this visitor from being saved:
+        <%= pluralize(@merchant.errors.count, "error") %> prohibited
+        this merchant from being saved:
       </h2>
       <ul>
-        <% @visitor.errors.full_messages.each do |msg| %>
+        <% @merchant.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
       </ul>

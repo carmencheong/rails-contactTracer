@@ -7326,3 +7326,1997 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 0.0ms | Allocations: 5434)
 
 
+Started GET "/" for ::1 at 2020-12-17 13:21:26 +0800
+  [1m[35m (15.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 820)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 849ms (Views: 796.9ms | ActiveRecord: 0.0ms | Allocations: 20870)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 13:21:36 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 172)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 59.7ms | ActiveRecord: 0.0ms | Allocations: 5254)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 13:21:39 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 141)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.0ms | Allocations: 4903)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 13:23:26 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 83.2ms | Allocations: 4770)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms | Allocations: 5917)
+
+
+  
+ActionView::Template::Error (Missing partial signups/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/carmen/Documents/contact_trace/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.4/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.4/app/views"
+):
+    1: <h1>Location Owners Sign-up Page</h2>
+    2: 
+    3: <%= render 'form' %>
+    4: 
+    5: <%= link_to 'Back', signups_path %>
+    6: 
+  
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:24:58 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/_form.html.erb (Duration: 1.6ms | Allocations: 1388)
+  Rendered signups/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1705)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 2859)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @signup do |v| %>
+    2: 
+    3:   <% if @signup.errors.any? %>
+    4:     <div id="error_explanation">
+  
+app/views/signups/_form.html.erb:1
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:25:07 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/_form.html.erb (Duration: 1.5ms | Allocations: 1362)
+  Rendered signups/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1679)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2823)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @signup do |s| %>
+    2: 
+    3:   <% if @signup.errors.any? %>
+    4:     <div id="error_explanation">
+  
+app/views/signups/_form.html.erb:1
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:25:12 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/_form.html.erb (Duration: 0.7ms | Allocations: 1017)
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1079)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1486)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @signup do |s| %>
+    2: 
+    3:   <% if @signup.errors.any? %>
+    4:     <div id="error_explanation">
+  
+app/views/signups/_form.html.erb:1
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:26:32 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2381)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:3:in `new'
+Started GET "/signups/new" for ::1 at 2020-12-17 13:28:27 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/_form.html.erb (Duration: 0.4ms | Allocations: 970)
+  Rendered signups/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1032)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1598)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @signup do |s| %>
+    2: 
+    3:   <% if @signup.errors.any? %>
+    4:     <div id="error_explanation">
+  
+app/views/signups/_form.html.erb:1
+app/views/signups/new.html.erb:3
+Started GET "/" for ::1 at 2020-12-17 13:31:29 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 680)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 0.0ms | Allocations: 6174)
+
+
+Started GET "/visitors" for ::1 at 2020-12-17 13:31:32 +0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 0.0ms | Allocations: 5324)
+
+
+Started GET "/visitors/new" for ::1 at 2020-12-17 13:31:34 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 262.3ms | Allocations: 125408)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 264.4ms | Allocations: 125722)
+Completed 500 Internal Server Error in 293ms (ActiveRecord: 1.5ms | Allocations: 130473)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `v' for #<#<Class:0x000000000ac6d680>:0x000000000a381738>):
+    15:   <% end %>
+    16:   
+    17:   <p>
+    18:     <%= v.label :name, "Full Legal Name *" %><br>
+    19:     <%= v.text_field :fullname %>
+    20:   </p>
+    21:  
+  
+app/views/visitors/_form.html.erb:18
+app/views/visitors/_form.html.erb:1
+app/views/visitors/new.html.erb:5
+Started GET "/visitors/new" for ::1 at 2020-12-17 13:32:20 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 164.7ms | Allocations: 5412)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 168.5ms | Allocations: 5743)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 215ms (Views: 213.0ms | ActiveRecord: 0.0ms | Allocations: 11176)
+
+
+Started GET "/visitors" for ::1 at 2020-12-17 13:32:26 +0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.0ms | Allocations: 4880)
+
+
+Started GET "/" for ::1 at 2020-12-17 13:32:30 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 279)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms | Allocations: 5446)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 13:32:32 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms | Allocations: 5288)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 13:32:34 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/_form.html.erb (Duration: 1.1ms | Allocations: 1361)
+  Rendered signups/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1671)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2221)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @signup do |f| %>
+    2: 
+    3:   <% if @signup.errors.any? %>
+    4:     <div id="error_explanation">
+  
+app/views/signups/_form.html.erb:1
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:33:18 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/_form.html.erb (Duration: 1.4ms | Allocations: 1361)
+  Rendered signups/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1677)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2830)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @signup do |f| %>
+    2: 
+    3:   <% if @signup.errors.any? %>
+    4:     <div id="error_explanation">
+  
+app/views/signups/_form.html.erb:1
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:34:06 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2385)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:3:in `new'
+Started GET "/signups/new" for ::1 at 2020-12-17 13:37:28 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2385)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:3:in `new'
+Started GET "/signups/new" for ::1 at 2020-12-17 13:37:30 +0800
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2426)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:3:in `new'
+Started GET "/signups/new" for ::1 at 2020-12-17 13:40:16 +0800
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2426)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:3:in `new'
+Started GET "/signups" for ::1 at 2020-12-17 13:40:19 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 166)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.0ms | Allocations: 5200)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 13:40:21 +0800
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2412)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:3:in `new'
+Started GET "/signups/new" for ::1 at 2020-12-17 13:40:41 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1333)
+
+
+  
+NoMethodError (undefined method `new' for Signal:Module):
+  
+app/controllers/signups_controller.rb:3:in `new'
+Started GET "/signups/new" for ::1 at 2020-12-17 13:40:55 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2371)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:3:in `new'
+Started GET "/signups/new" for ::1 at 2020-12-17 13:42:17 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2371)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:3:in `new'
+Started GET "/signups/new" for ::1 at 2020-12-17 13:44:16 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/_form.html.erb (Duration: 0.4ms | Allocations: 970)
+  Rendered signups/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1032)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1596)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @signup do |f| %>
+    2: 
+    3:   <% if @signup.errors.any? %>
+    4:     <div id="error_explanation">
+  
+app/views/signups/_form.html.erb:1
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:44:52 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1711)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 2849)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>Location Owners Sign-up Page</h2>
+    2: 
+    3:   <% if @signup.errors.any? %>
+    4:     <div id="error_explanation">
+    5:       <h2>
+    6:         <%= pluralize(@signup.errors.count, "error") %> prohibited
+  
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:45:28 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 283.4ms | Allocations: 124779)
+Completed 500 Internal Server Error in 295ms (ActiveRecord: 0.0ms | Allocations: 125917)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x000000000ac82e40>:0x000000000ac13018>):
+    2: 
+    3:  
+    4:   <p>
+    5:     <%= f.label :name, "Full Legal Name *" %><br>
+    6:     <%= f.text_field :fullname %>
+    7:   </p>
+    8:  
+  
+app/views/signups/new.html.erb:5
+Started GET "/signups/new" for ::1 at 2020-12-17 13:48:07 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1177)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2316)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Location Owners Sign-up Page</h2>
+
+<%= form_for([@signup, url: signup_path(@signup), method: :patch do |f| %>
+
+  <p>
+    <%= f.label :name, "Full Legal Name *" %><br>
+    <%= f.text_field :fullname %>
+  </p>
+ 
+  <p>
+    <%= f.label :nric, "NRIC *" %><br>
+    <%= f.text_field :nric %>
+  </p>
+ 
+   <p>
+    <%= f.label :bodytemp, "Body Temperature \u{2103} *" %><br>
+    <%= f.text_field :temperature %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+  
+<% end %>
+
+<%= link_to 'Back', signups_path %>
+
+
+):
+1:    <h1>Location Owners Sign-up Page</h2>
+2:    
+3:    <%= form_for([@signup, url: signup_path(@signup), method: :patch do |f| %>
+4:    
+5:      <p>
+6:        <%= f.label :name, "Full Legal Name *" %><br>
+7:        <%= f.text_field :fullname %>
+8:      </p>
+9:     
+10:      <p>
+11:        <%= f.label :nric, "NRIC *" %><br>
+12:        <%= f.text_field :nric %>
+13:      </p>
+14:     
+15:       <p>
+16:        <%= f.label :bodytemp, "Body Temperature \u{2103} *" %><br>
+17:        <%= f.text_field :temperature %>
+18:      </p>
+19:    
+20:      <p>
+21:        <%= f.submit %>
+22:      </p>
+23:      
+24:    <% end %>
+25:    
+26:    <%= link_to 'Back', signups_path %>
+27:    
+  
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ']'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ']'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ']'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ']'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ']'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ']'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+Started GET "/signups/new" for ::1 at 2020-12-17 13:48:21 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1177)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2316)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Location Owners Sign-up Page</h2>
+
+<%= form_for(@signup, url: signup_path(@signup), method: :patch do |f| %>
+
+  <p>
+    <%= f.label :name, "Full Legal Name *" %><br>
+    <%= f.text_field :fullname %>
+  </p>
+ 
+  <p>
+    <%= f.label :nric, "NRIC *" %><br>
+    <%= f.text_field :nric %>
+  </p>
+ 
+   <p>
+    <%= f.label :bodytemp, "Body Temperature \u{2103} *" %><br>
+    <%= f.text_field :temperature %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+  
+<% end %>
+
+<%= link_to 'Back', signups_path %>
+
+
+):
+1:    <h1>Location Owners Sign-up Page</h2>
+2:    
+3:    <%= form_for(@signup, url: signup_path(@signup), method: :patch do |f| %>
+4:    
+5:      <p>
+6:        <%= f.label :name, "Full Legal Name *" %><br>
+7:        <%= f.text_field :fullname %>
+8:      </p>
+9:     
+10:      <p>
+11:        <%= f.label :nric, "NRIC *" %><br>
+12:        <%= f.text_field :nric %>
+13:      </p>
+14:     
+15:       <p>
+16:        <%= f.label :bodytemp, "Body Temperature \u{2103} *" %><br>
+17:        <%= f.text_field :temperature %>
+18:      </p>
+19:    
+20:      <p>
+21:        <%= f.submit %>
+22:      </p>
+23:      
+24:    <% end %>
+25:    
+26:    <%= link_to 'Back', signups_path %>
+27:    
+  
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ')'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ')'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ')'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ')'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ')'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/signups/new.html.erb:3: syntax error, unexpected `do', expecting ')'
+app/views/signups/new.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+Started GET "/signups/new" for ::1 at 2020-12-17 13:48:41 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1221)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2359)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"signups", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Location Owners Sign-up Page</h2>
+    2: 
+    3: <%= form_for :signup, url: signup_path(@signup), method: :patch do |f| %>
+    4: 
+    5:   <p>
+    6:     <%= f.label :name, "Full Legal Name *" %><br>
+  
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:54:40 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.4) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.4) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMerchants (20201217055434)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "merchants" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "owner" varchar, "shopname" varchar, "shoplocation" varchar, "url" varchar, "visitor_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7468042559"
+FOREIGN KEY ("visitor_id")
+  REFERENCES "visitors" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_merchants_on_visitor_id" ON "merchants" ("visitor_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201217055434"]]
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/signups/new" for ::1 at 2020-12-17 13:56:28 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 901)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1465)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"signups", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Location Owners Sign-up Page</h2>
+    2: 
+    3: <%= form_for :signup, url: signup_path(@signup), method: :patch do |f| %>
+    4: 
+    5:   <p>
+    6:     <%= f.label :name, "Full Legal Name *" %><br>
+  
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:57:32 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1219)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2357)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"signups", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Location Owners Sign-up Page</h2>
+    2: 
+    3: <%= form_for :signup, url: signup_path(@signup), method: :patch do |f| %>
+    4: 
+    5:   <p>
+    6:     <%= f.label :name, "Full Legal Name *" %><br>
+  
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:57:36 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 944)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1349)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"signups", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Location Owners Sign-up Page</h2>
+    2: 
+    3: <%= form_for :signup, url: signup_path(@signup), method: :patch do |f| %>
+    4: 
+    5:   <p>
+    6:     <%= f.label :name, "Full Legal Name *" %><br>
+  
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:57:37 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 944)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1348)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"signups", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Location Owners Sign-up Page</h2>
+    2: 
+    3: <%= form_for :signup, url: signup_path(@signup), method: :patch do |f| %>
+    4: 
+    5:   <p>
+    6:     <%= f.label :name, "Full Legal Name *" %><br>
+  
+app/views/signups/new.html.erb:3
+Started GET "/signups" for ::1 at 2020-12-17 13:57:42 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 165)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms | Allocations: 5031)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 13:57:44 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 947)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1374)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"signups", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Location Owners Sign-up Page</h2>
+    2: 
+    3: <%= form_for :signup, url: signup_path(@signup), method: :patch do |f| %>
+    4: 
+    5:   <p>
+    6:     <%= f.label :name, "Full Legal Name *" %><br>
+  
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:58:09 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 119.2ms | Allocations: 64186)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.0ms | Allocations: 65346)
+
+
+  
+ActionView::Template::Error (undefined method `merchant_path' for #<#<Class:0x000000000e174748>:0x000000000f2c1e10>):
+    1: <h1>Location Owners Sign-up Page</h2>
+    2: 
+    3: <%= form_for :merchant, url: merchant_path(@merchant), method: :patch do |f| %>
+    4: 
+    5:   <p>
+    6:     <%= f.label :name, "Full Legal Name *" %><br>
+  
+app/views/signups/new.html.erb:3
+Started GET "/signups/new" for ::1 at 2020-12-17 13:58:39 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 858)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.0ms | Allocations: 6386)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 13:58:52 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 847)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.0ms | Allocations: 6355)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 13:58:53 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms | Allocations: 5164)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 13:59:51 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 836)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.0ms | Allocations: 6351)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 14:00:04 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 836)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.0ms | Allocations: 6349)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 14:00:05 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 5170)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 14:01:52 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 791)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 42.8ms | ActiveRecord: 0.0ms | Allocations: 6299)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 16:44:50 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 797)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.0ms | Allocations: 6310)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 16:45:09 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 792)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms | Allocations: 6290)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 16:45:40 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 517)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms | Allocations: 5117)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 16:45:45 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"JLXP35EeRgiaZn4Hd3FNHcgBOmZ0AKDuNGKH5w4frlnuLhxc5GAyAaZJ9CprH7nIuLeTeLOy9/rPrj2/Nzv4gQ==", "signup"=>{"fullname"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2469)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:6:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 16:46:10 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"JLXP35EeRgiaZn4Hd3FNHcgBOmZ0AKDuNGKH5w4frlnuLhxc5GAyAaZJ9CprH7nIuLeTeLOy9/rPrj2/Nzv4gQ==", "signup"=>{"fullname"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2430)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started GET "/signups" for ::1 at 2020-12-17 16:46:13 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.0ms | Allocations: 5022)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 16:46:15 +0800
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2426)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:3:in `new'
+Started GET "/signups/new" for ::1 at 2020-12-17 16:46:25 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 520)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms | Allocations: 5241)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 16:47:35 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 57)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms | Allocations: 4644)
+
+
+Started GET "/" for ::1 at 2020-12-17 16:47:37 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 676)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 0.0ms | Allocations: 5792)
+
+
+Started GET "/visitors" for ::1 at 2020-12-17 16:47:42 +0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 185)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.0ms | Allocations: 5300)
+
+
+Started GET "/visitors/new" for ::1 at 2020-12-17 16:47:43 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 2.1ms | Allocations: 974)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1305)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 62.5ms | ActiveRecord: 0.9ms | Allocations: 9945)
+
+
+Started POST "/visitors" for ::1 at 2020-12-17 16:47:45 +0800
+Processing by VisitorsController#create as HTML
+  Parameters: {"authenticity_token"=>"oJtipfS89FSq3lhmrgGAMGquNsn9AvCIDwcPdHBzuulRGvgTXYOcVWQzTos4oh+40dcY1/HNshY6NoJiGxIq1Q==", "visitor"=>{"fullname"=>"", "nric"=>"", "temperature"=>""}, "commit"=>"Create Visitor"}
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 1.8ms | Allocations: 1237)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1318)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 38.1ms | ActiveRecord: 0.0ms | Allocations: 8693)
+
+
+Started GET "/visitors/10" for ::1 at 2020-12-17 16:47:49 +0800
+Processing by VisitorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVisitor Load (0.7ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/visitors_controller.rb:3:in `show'
+  Rendering visitors/show.html.erb within layouts/application
+  Rendered visitors/show.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1611)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 59.7ms | ActiveRecord: 0.7ms | Allocations: 7263)
+
+
+Started GET "/visitors" for ::1 at 2020-12-17 16:47:57 +0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 60)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.0ms | Allocations: 4646)
+
+
+Started GET "/visitors" for ::1 at 2020-12-17 16:47:58 +0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms | Allocations: 4639)
+
+
+Started GET "/" for ::1 at 2020-12-17 16:48:03 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms | Allocations: 4766)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 16:48:12 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 60)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.0ms | Allocations: 4643)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 16:48:17 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 513)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.0ms | Allocations: 5114)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 16:48:19 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.0ms | Allocations: 4636)
+
+
+Started GET "/" for ::1 at 2020-12-17 16:48:21 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 155)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 61.7ms | ActiveRecord: 0.0ms | Allocations: 4756)
+
+
+Started GET "/visitors" for ::1 at 2020-12-17 16:48:23 +0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.0ms | Allocations: 4633)
+
+
+Started GET "/visitors/new" for ::1 at 2020-12-17 16:48:26 +0800
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/_form.html.erb (Duration: 0.9ms | Allocations: 567)
+  Rendered visitors/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 648)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 55.7ms | ActiveRecord: 0.0ms | Allocations: 5262)
+
+
+Started GET "/visitors" for ::1 at 2020-12-17 16:48:48 +0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.0ms | Allocations: 4643)
+
+
+Started GET "/" for ::1 at 2020-12-17 16:48:50 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 154)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.0ms | Allocations: 4749)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 16:48:56 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 54)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms | Allocations: 4637)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 16:48:59 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 512)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms | Allocations: 5111)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 16:49:12 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"DJxiveyhxa9fb2rFffkjDOvzgtqcMoBlDDAQT+ttbaqrOHNN7jiYP5SUxo2CwK0pbhzk5Yb+pgQFMt+hRcv5TA==", "signup"=>{"fullname"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2508)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:6:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 16:49:43 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"DJxiveyhxa9fb2rFffkjDOvzgtqcMoBlDDAQT+ttbaqrOHNN7jiYP5SUxo2CwK0pbhzk5Yb+pgQFMt+hRcv5TA==", "signup"=>{"fullname"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2466)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started GET "/signups/new" for ::1 at 2020-12-17 16:49:47 +0800
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2430)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:3:in `new'
+Started POST "/__web_console/repl_sessions/ca8a99094ebe23b13c23b49a1d2e3483/trace" for ::1 at 2020-12-17 16:49:54 +0800
+Started GET "/signups/new" for ::1 at 2020-12-17 16:53:13 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 520)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 114ms (Views: 38.5ms | ActiveRecord: 2.4ms | Allocations: 10899)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 16:53:15 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"AalhEhYUtN+2IUhbCz1bfPIazsmEJHFFoZBmUYo4VvjLMrKRY2rA1ooOwnYXU6+pgqxn10OWJlFaXNwJsxwAIA==", "signup"=>{"fullname"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2483)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 16:53:49 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"AalhEhYUtN+2IUhbCz1bfPIazsmEJHFFoZBmUYo4VvjLMrKRY2rA1ooOwnYXU6+pgqxn10OWJlFaXNwJsxwAIA==", "signup"=>{"fullname"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.0ms | Allocations: 83846)
+
+
+  
+NameError (undefined local variable or method `merchant_params' for #<SignupsController:0x000000000de8cfd0>):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 16:54:19 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"AalhEhYUtN+2IUhbCz1bfPIazsmEJHFFoZBmUYo4VvjLMrKRY2rA1ooOwnYXU6+pgqxn10OWJlFaXNwJsxwAIA==", "signup"=>{"fullname"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 0.0ms | Allocations: 83904)
+
+
+  
+NameError (undefined local variable or method `signup_params' for #<SignupsController:0x000000000ad3fc48>
+Did you mean?  signup_path):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 16:54:26 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"AalhEhYUtN+2IUhbCz1bfPIazsmEJHFFoZBmUYo4VvjLMrKRY2rA1ooOwnYXU6+pgqxn10OWJlFaXNwJsxwAIA==", "signup"=>{"fullname"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms | Allocations: 83479)
+
+
+  
+NameError (undefined local variable or method `signup_params' for #<SignupsController:0x000000000e13c0f0>
+Did you mean?  signup_path):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 16:57:48 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"AalhEhYUtN+2IUhbCz1bfPIazsmEJHFFoZBmUYo4VvjLMrKRY2rA1ooOwnYXU6+pgqxn10OWJlFaXNwJsxwAIA==", "signup"=>{"fullname"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 16:58:45 +0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"AalhEhYUtN+2IUhbCz1bfPIazsmEJHFFoZBmUYo4VvjLMrKRY2rA1ooOwnYXU6+pgqxn10OWJlFaXNwJsxwAIA==", "signup"=>{"fullname"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2483)
+
+
+  
+NameError (uninitialized constant SignupsController::Signup
+Did you mean?  Signal):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 17:00:35 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"AalhEhYUtN+2IUhbCz1bfPIazsmEJHFFoZBmUYo4VvjLMrKRY2rA1ooOwnYXU6+pgqxn10OWJlFaXNwJsxwAIA==", "signup"=>{"fullname"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 227ms (ActiveRecord: 0.0ms | Allocations: 83937)
+
+
+  
+NameError (undefined local variable or method `signup_params' for #<SignupsController:0x000000000b11ca00>
+Did you mean?  signup_path):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started GET "/" for ::1 at 2020-12-17 17:03:24 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 554)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms | Allocations: 5282)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 17:03:26 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms | Allocations: 4799)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 17:03:27 +0800
+Processing by SignupsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms | Allocations: 684)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'signups'):
+  
+app/controllers/signups_controller.rb:3:in `new'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mVisitor Load (0.6ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+Started GET "/signups/new" for ::1 at 2020-12-17 17:13:45 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.4) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.4) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeMerchantToSignup (20201217091057)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[35mALTER TABLE "merchants" RENAME TO "signups"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_signups_on_visitor_id" ON "signups" ("visitor_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP INDEX "index_merchants_on_visitor_id"[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201217091057"]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/signups/new" for ::1 at 2020-12-17 17:16:15 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 3117)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.5ms | Allocations: 8429)
+
+
+  
+ActionView::Template::Error (undefined method `fullname' for #<Signup:0x000000000e11eaa0>):
+    4: 
+    5:   <p>
+    6:     <%= f.label :owner, "Full Legal Name *" %><br>
+    7:     <%= f.text_field :fullname %>
+    8:   </p>
+    9:  
+   10:   <p>
+  
+app/views/signups/new.html.erb:7
+app/views/signups/new.html.erb:3
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mVisitor Load (0.6ms)[0m  [1m[34mSELECT "visitors".* FROM "visitors" WHERE "visitors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+Started GET "/signups/new" for ::1 at 2020-12-17 17:17:47 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 828)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 65.2ms | ActiveRecord: 0.0ms | Allocations: 6367)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:17:49 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"6MCZw4Gdr8j8M2BZiRCsuiozzN+BaDzRsHL31F0+4F4iW0pA9OPbwcAc6nSVflhvWoVlwUbaa8VLvk2MZBq2hg==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 0.0ms | Allocations: 83629)
+
+
+  
+NameError (undefined local variable or method `signup_params' for #<SignupsController:0x000000000eb98fa8>
+Did you mean?  signup_path):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 17:23:31 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"6MCZw4Gdr8j8M2BZiRCsuiozzN+BaDzRsHL31F0+4F4iW0pA9OPbwcAc6nSVflhvWoVlwUbaa8VLvk2MZBq2hg==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 2.4ms | Allocations: 5412)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 17:24:36 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"6MCZw4Gdr8j8M2BZiRCsuiozzN+BaDzRsHL31F0+4F4iW0pA9OPbwcAc6nSVflhvWoVlwUbaa8VLvk2MZBq2hg==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 576)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 192ms (Views: 54.5ms | ActiveRecord: 2.5ms | Allocations: 13429)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:24:38 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"+rD0rbcoi8mjlMU7pd0ewJMI9F2OZnVodibGbkX+T+wwKycuwlb/wJ+7Txa5s+oV475dQ0nUInyN6nw2fNoZNA==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 51.5ms | ActiveRecord: 0.0ms | Allocations: 5964)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:24:39 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"dDlCCkAOnPTtlgkzleRgX+qTSYQm9MD6O1Ir3FqtIdS+opGJNXDo/dG5gx6JipSKmiXgmuFGl+7AnpGEY4l3DA==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 44.8ms | ActiveRecord: 0.0ms | Allocations: 5958)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 17:25:25 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 171)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 50.9ms | ActiveRecord: 0.0ms | Allocations: 4977)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 17:25:27 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 62.3ms | ActiveRecord: 2.5ms | Allocations: 9909)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:25:28 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"F6l1wYUy0pRa/ie4twItcHkGIn90HQysNlMDVftlRsKwDWQxh6uPBJEFi/BIO6NV/OlEQG7RKs0/Ucy7VcPSJA==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.0ms | Allocations: 83663)
+
+
+  
+NameError (undefined local variable or method `signup_params' for #<SignupsController:0x000000000e4e2ce0>
+Did you mean?  signup_path):
+  
+app/controllers/signups_controller.rb:7:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 17:26:33 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (C:/Users/carmen/Documents/contact_trace/app/controllers/signups_controller.rb:19: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/signups_controller.rb:19: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/signups_controller.rb:19: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/signups_controller.rb:19: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/signups" for ::1 at 2020-12-17 17:26:44 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"F6l1wYUy0pRa/ie4twItcHkGIn90HQysNlMDVftlRsKwDWQxh6uPBJEFi/BIO6NV/OlEQG7RKs0/Ucy7VcPSJA==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 576)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 55.8ms | ActiveRecord: 1.2ms | Allocations: 11826)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:26:46 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"5wsJrxGEPnSWW8Y9wwW4z7FOpWHMqyfeOlpDT5jj6G8tkNosZPpKfap0TBDfa0wawfgMfwsZcMrBlvkXoce+tw==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 55.4ms | ActiveRecord: 0.0ms | Allocations: 5972)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:26:47 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"uU50b/LJEmm+s5cvEl8xm79srwiaXhB1DwB1WUVfDj9z1afsh7dmYIKcHQIOMcVOz9oGFl3sR2H0zM8BfHtY5w==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.0ms | Allocations: 5966)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:26:48 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"Q/UxUAGMh9u3WC2aEvdiULlD19t2cXYeKRqUtzGNOziJbuLTdPLz0ot3p7cOmZaFyfV+xbHDIQrS1i7vCKlt4A==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 0.0ms | Allocations: 5958)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:28:33 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"l4QRXAR7Gngt6F3c4KxuwozYrT7QRo/L6dRHiD5wJnVdH8LfcQVucRHH1/H8wpoX/G4EIBf02N8SGP3QB1RwrQ==", "signup"=>{"owner"=>"Owner1", "shopname"=>"Shop 1", "shoplocation"=>"Location 1"}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 567)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 53.2ms | ActiveRecord: 0.0ms | Allocations: 5971)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:28:34 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"2xZrjNBgjCGDOK/FWmTd2wdWYsHMr9VItIBpHr1oYf4RjbgPpR74KL8XJehGCikOd+DL3wsdglxPTNNGhEw3Jg==", "signup"=>{"owner"=>"Owner1", "shopname"=>"Shop 1", "shoplocation"=>"Location 1"}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 567)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 64.9ms | ActiveRecord: 0.0ms | Allocations: 5968)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:28:35 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"VQYIWEpR0ibKXVBNGcYh1QIeUSqzCdkpVxeVMpAsmnufndvbPy+mL/Zy2mAFqNUAcqj4NHS7jj2s2y9qqQjMow==", "signup"=>{"owner"=>"Owner1", "shopname"=>"Shop 1", "shoplocation"=>"Location 1"}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 567)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 5961)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:28:36 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"gcxXegO0xykNHBi8M5Wjun7JxYFrK8S7Cbjc+wi+xstLV4T5dsqzIDEzkpEv+1dvDn9sn6yZk6/ydGajMZqQEw==", "signup"=>{"owner"=>"Owner1", "shopname"=>"Shop 1", "shoplocation"=>"Location 1"}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 567)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.0ms | Allocations: 5965)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 17:29:25 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.0ms | Allocations: 4767)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 17:29:27 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 95ms (Views: 70.7ms | ActiveRecord: 2.4ms | Allocations: 9947)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:29:29 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"tIYqQv6kBfg3ZktKrrawXBg62x8xlyFdib2PkxvpLi8TIjuy/D1YaPyd5wJRjz55ndW9ICtbBzyAv0B9tU+6yQ==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 565)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 57.1ms | ActiveRecord: 0.0ms | Allocations: 6916)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:29:31 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"ceQRlG22oFDU9hWFfsihNID5hRPTXQPmiFCK1XdCj8G7f8IXGMjUWejZn6hiplXh8E8sDRTvVPJznDCNTmbZGQ==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 49.7ms | ActiveRecord: 0.0ms | Allocations: 5962)
+
+
+  [1m[36mSignup Load (0.6ms)[0m  [1m[34mSELECT "signups".* FROM "signups" WHERE "signups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSignup Load (0.5ms)[0m  [1m[34mSELECT "signups".* FROM "signups" WHERE "signups"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Started GET "/signups" for ::1 at 2020-12-17 17:31:40 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 54)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 4661)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 17:31:42 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 543)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.0ms | Allocations: 5159)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:31:43 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"bv2FphclmX3BLymKf6W96ezdUmGIkryyKqce1ujObMfJWZRWFbzE7QrUhcKAnDPMaTI0XpJemtMjpdE4Rmj4IQ==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 71.7ms | ActiveRecord: 0.0ms | Allocations: 5988)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:31:44 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"4D+/G/cw0yGXzm/TaedCPKPfcIfJyiMFfJP85I5HEF0qpGyYgk6nKKvh5f51ibbp02nZmQ54dBGHX0a8t2NGhQ==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 72.0ms | ActiveRecord: 0.0ms | Allocations: 5954)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:31:45 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"8edx4ksG+SNN3VWsHQrwdybyVmeE1FoVLaDMqK1t1Io7fKJhPniNKnHy34EBZASiVkT/eUNmDQHWbHbwlEmCUg==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.0ms | Allocations: 5960)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 17:32:23 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.0ms | Allocations: 4759)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 17:32:25 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 50.8ms | ActiveRecord: 1.5ms | Allocations: 9960)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:32:26 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"h82j2K11oVUk/yYNgqBwgASUmOSBQdfCl0ZWt0GfANogabIor+z8xe8EikV9mf6lgXv+25uN8aOeRJlZ7zmUPA==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 500 Internal Server Error in 46ms (Views: 43.1ms | ActiveRecord: 0.0ms | Allocations: 1474)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/signups_controller.rb:14:in `create'
+Started POST "/signups" for ::1 at 2020-12-17 17:33:14 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"h82j2K11oVUk/yYNgqBwgASUmOSBQdfCl0ZWt0GfANogabIor+z8xe8EikV9mf6lgXv+25uN8aOeRJlZ7zmUPA==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 590)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/signups" for ::1 at 2020-12-17 17:35:36 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"h82j2K11oVUk/yYNgqBwgASUmOSBQdfCl0ZWt0GfANogabIor+z8xe8EikV9mf6lgXv+25uN8aOeRJlZ7zmUPA==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 586)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:35:39 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"h82j2K11oVUk/yYNgqBwgASUmOSBQdfCl0ZWt0GfANogabIor+z8xe8EikV9mf6lgXv+25uN8aOeRJlZ7zmUPA==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 420)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:35:44 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"h82j2K11oVUk/yYNgqBwgASUmOSBQdfCl0ZWt0GfANogabIor+z8xe8EikV9mf6lgXv+25uN8aOeRJlZ7zmUPA==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 404)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 17:35:46 +0800
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.0ms | Allocations: 4651)
+
+
+Started GET "/signups/new" for ::1 at 2020-12-17 17:35:48 +0800
+Processing by SignupsController#new as HTML
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 87ms (Views: 63.6ms | ActiveRecord: 2.3ms | Allocations: 9974)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:35:50 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"4xmpVJe5FGurJjkhsXxGtC5nSaoA0BRM7FTd1feNUJBEvbiklSBJ+2DdlWlORciRq4gvlRocMi3lVhI7WSvEdg==", "signup"=>{"owner"=>"", "shopname"=>"", "shoplocation"=>""}, "commit"=>"Save Signup"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 428)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:36:00 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"+G5oaIkaOQ2MbGfJ+iA1lvuQoxE6mYEeCEj95a0r4UQy9bvr/GRNBLBD7eTmTsFDiyYKD/0r1grzhEe9lA+3nA==", "signup"=>{"owner"=>"Owner1", "shopname"=>"Shop 1", "shoplocation"=>"Location 1"}, "commit"=>"Save Signup"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 384)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:37:08 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"+G5oaIkaOQ2MbGfJ+iA1lvuQoxE6mYEeCEj95a0r4UQy9bvr/GRNBLBD7eTmTsFDiyYKD/0r1grzhEe9lA+3nA==", "signup"=>{"owner"=>"Owner1", "shopname"=>"Shop 1", "shoplocation"=>"Location 1"}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 581)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 56.9ms | ActiveRecord: 2.4ms | Allocations: 11754)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:37:10 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"GYMO5EMbjlMG51/RNy8iyh2/+8ovHJnSfAIhx17I+I3TGN1nNmX6WjrI1fwrQdYfbQlS1OiuzsaHzpufZ+yuVQ==", "signup"=>{"owner"=>"Owner1", "shopname"=>"Shop 1", "shoplocation"=>"Location 1"}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 567)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.0ms | Allocations: 5973)
+
+
+Started POST "/signups" for ::1 at 2020-12-17 17:37:11 +0800
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"xX/ofroYq/llJQuIJRvrdbxzr+dFApLv+e+h+elr9mAP5Dv9z2bf8FkKgaU5dR+gzMUG+YKwxfsCIxuh0E+guA==", "signup"=>{"owner"=>"Owner1", "shopname"=>"Shop 1", "shoplocation"=>"Location 1"}, "commit"=>"Save Signup"}
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 567)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 0.0ms | Allocations: 5967)
+
+
+Started GET "/signups" for ::1 at 2020-12-17 17:39:43 +0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.4) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.4) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DoubleconfirmChangeSignupToSignup (20201217093849)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "signups" RENAME TO "signups"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/signups" for ::1 at 2020-12-17 17:40:10 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.4) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.4) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/signups" for ::1 at 2020-12-17 17:40:13 +0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.4) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.4) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeMerchantToSignup (20201217091057)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "signups" RENAME TO "merchants"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_merchants_on_visitor_id" ON "merchants" ("visitor_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP INDEX "index_signups_on_visitor_id"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20201217091057"]]
+  [1m[35m (16.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/signups" for ::1 at 2020-12-17 17:42:31 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.4) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.4) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/signups" for ::1 at 2020-12-17 17:42:33 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.4) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.4) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/s" for ::1 at 2020-12-17 17:42:36 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.4) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.4) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-12-17 17:42:39 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.4) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.4) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeMerchantToSignup (20201217091057)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (10.6ms)[0m  [1m[35mALTER TABLE "merchants" RENAME TO "signups"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX "index_signups_on_visitor_id" ON "signups" ("visitor_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP INDEX "index_merchants_on_visitor_id"[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201217091057"]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DoubleconfirmChangeSignupToSignup (20201217093849)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "signups" RENAME TO "signups"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m

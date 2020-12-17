@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_30_073949) do
+ActiveRecord::Schema.define(version: 2020_12_17_055434) do
+
+  create_table "merchants", force: :cascade do |t|
+    t.string "owner"
+    t.string "shopname"
+    t.string "shoplocation"
+    t.string "url"
+    t.integer "visitor_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["visitor_id"], name: "index_merchants_on_visitor_id"
+  end
 
   create_table "visitors", force: :cascade do |t|
     t.string "fullname"
@@ -20,4 +31,5 @@ ActiveRecord::Schema.define(version: 2020_11_30_073949) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "merchants", "visitors"
 end
