@@ -1,11 +1,1 @@
-Faris is a thriving PostCo agent and owner of Tapir Grocer, an artisanal grocery shop in Taman Tun. 
-After the recent pandemic event, contact tracing has become essential and many apps have been developed for this. 
-Instead of relying on these solutions, Faris decided to hire you to build a custom solution for Tapir Grocer.
 
-Above is a programming problem set.
-
-This is my first project using Ruby on Rails framework to build a web application for contact tracing. 
-
-So far, I've done for these app features:
-- Visitors can check in when visiting Tapir Grocer.
-- When they check in, the app will capture the visitor's full name, NRIC number, body temperature, date, and time.
